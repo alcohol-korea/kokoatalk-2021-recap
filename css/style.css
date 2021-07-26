@@ -1,23 +1,17 @@
 body {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
-  flex-wrap: wrap-reverse;
+  height: 200vh;
 }
 div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   width: 200px;
   height: 200px;
   background-color: tomato;
 }
 #second {
-  background-color: teal;
-  transition: all 2s 0.07s;
-}
-#second:hover {
-  border-radius: 20px;
-  background-color: aquamarine;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  background-color: rgb(50, 121, 228);
+  width: 50px;
+  height: 50px;
 }

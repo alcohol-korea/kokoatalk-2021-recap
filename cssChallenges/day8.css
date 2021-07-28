@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  margin: 50px;
+}
+.box {
+  display: flex;
+  margin: 20px 0px;
+}
+.box_big {
+  border: 5px solid white;
+  width: 227px;
+  height: 450px;
+  margin: 0px 20px;
+}
+.box_small {
+  width: 227px;
+  height: 130px;
+  background-color: white;
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.box #tomato {
+  background-color: tomato;
+}
+.box #teal {
+  background-color: teal;
+}
+.box #burlywood {
+  background-color: burlywood;
+}
+.box #thistle {
+  background-color: thistle;
+}

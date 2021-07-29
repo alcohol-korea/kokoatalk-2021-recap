@@ -1,7 +1,12 @@
-span {
+a {
+  color: wheat;
   background-color: tomato;
+  border-radius: 5px;
+  padding: 3px 5px;
+  text-decoration: none;
+  transition: all 10s ease-in-out;
 }
-
-p~span {
-  background-color: thistle;
+a:hover {
+  color: tomato;
+  background-color: wheat;
 }

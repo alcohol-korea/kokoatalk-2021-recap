@@ -7,8 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Class</title>
+    <style>
+        div{
+            display: flex;
+            justify-content: flex-end ;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+            transition: all 5s ease-in-out;
+        }
+        div:hover{
+            transform: rotateY(360deg);
+        }
+        @media screen and (max-width:200px) {
+            div{
+                background-color: tomato;
+            }
+        }
+    </style>
 </head>
 <body>
-    <a href="https://nomadcoders.co/courses">nomadcoders</a>
+   <div>
+       2
+   </div>
 </body>
 </html>

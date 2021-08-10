@@ -1,0 +1,14 @@
+#friends-display-link {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  background-color: #fafafa;
+  padding: 15px 0px;
+  /*
+  display block text 랑 icon  (icon은 text로 취급)
+  widht 100% tex 아닐떄
+  */
+}
+#friends-display-link i {
+  color: #7b7e81;
+}

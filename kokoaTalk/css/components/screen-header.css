@@ -1,0 +1,17 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px 20px;
+  /*
+  padding-top 40px 은  status-bar이 postion fixed이기 떄문이다
+  다른 layer이므로 겹치게 된다 그래서 아예 screen-header에서 padding top으로 40px한거다
+  */
+}
+.screen-header__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+.screen-header__icon i {
+  margin-left: 20px;
+}

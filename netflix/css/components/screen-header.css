@@ -1,0 +1,58 @@
+.screen-header {
+  display: flex;
+  /*css는 위에서부터 아래로 내려감 display flex도 아닌데 block도 아닌데 postion 어캐함*/
+  height: 60px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: relative;
+  padding: 0px 35px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+/*link*/
+.screen-header-link {
+  display: flex;
+  align-items: center;
+}
+/*list*/
+.screen-header-page__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 11px;
+}
+.screen-header-page__btn {
+  margin: 0px 10px;
+  margin-bottom: 5px;
+}
+/*menu*/
+.screen-header-menu {
+  position: absolute;
+  right: 30px;
+  display: flex;
+  height: 70px;
+  align-items: center;
+}
+.screen-header-menu__btn:nth-child(1) {
+  margin-right: 25px;
+}
+.screen-header-menu__btn:nth-child(2) {
+  margin-right: 20px;
+}
+.screen-header-menu__btn:nth-child(3) {
+  margin-right: 10px;
+}
+.screen-header-menu__profile {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+}
+.fa-caret-down {
+  margin-bottom: 5px;
+  transition: all 0.5s;
+}
+.fa-caret-down:hover {
+  transform: rotateZ(180deg);
+}

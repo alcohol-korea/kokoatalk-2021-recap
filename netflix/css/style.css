@@ -1,63 +1,9 @@
 @import url(reset.css);
+/*components*/
+@import url(components/screen-header.css);
+@import url(components/main.css);
 body {
   font-family: sans-serif;
   height: 120vh;
   background-color: tomato;
-}
-.nav {
-  display: flex;
-  /*css는 위에서부터 아래로 내려감 display flex도 아닌데 block도 아닌데 postion 어캐함*/
-  height: 70px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.2);
-  position: relative;
-  padding: 0px 35px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  box-sizing: border-box;
-}
-/*link*/
-.nav-link {
-  display: flex;
-  align-items: center;
-}
-/*list*/
-.nav-page__list {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  font-size: 11px;
-}
-.nav-page__btn {
-  margin: 0px 10px;
-  margin-bottom: 5px;
-}
-/*menu*/
-.nav-menu {
-  position: absolute;
-  right: 30px;
-  display: flex;
-  height: 70px;
-  align-items: center;
-}
-.nav-menu__btn:nth-child(1) {
-  margin-right: 25px;
-}
-.nav-menu__btn:nth-child(2) {
-  margin-right: 20px;
-}
-.nav-menu__btn:nth-child(3) {
-  margin-right: 10px;
-}
-.nav-menu__profile {
-  width: 35px;
-  height: 35px;
-}
-.fa-caret-down {
-  margin-bottom: 5px;
-  transition: all 0.5s;
-}
-.fa-caret-down:hover {
-  transform: rotateZ(180deg);
 }

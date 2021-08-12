@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px var(--horizontal-space);
-  background-color: #7b7b7b;
+  background-color: inherit;
   /*
   padding-top 40px 은  status-bar이 postion fixed이기 떄문이다
   다른 layer이므로 겹치게 된다 그래서 아예 screen-header에서 padding top으로 40px한거다

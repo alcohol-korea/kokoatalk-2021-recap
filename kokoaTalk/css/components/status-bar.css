@@ -1,5 +1,5 @@
 .status-bar {
-  background-color: #7b7b7b;
+  background-color: inherit;
   color: white;
   display: flex;
   justify-content: center;

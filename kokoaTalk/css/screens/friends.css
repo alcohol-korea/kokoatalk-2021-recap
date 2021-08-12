@@ -7,7 +7,7 @@
   margin: 20px 0px 10px;
   /*
   display block text 랑 icon  (icon은 text로 취급)
-  widht 100% tex 아닐떄
+  widht 100% text 아닐떄
   */
 }
 #friends-display-link i {
@@ -16,13 +16,13 @@
 .friends-screen {
   padding: 0px var(--horizontal-space);
 }
-.friends--screen__channel-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
 .friends-screen__channel {
   margin-top: 20px;
   border-top: 1px solid rgba(0, 0, 0, 0.4);
   padding: 15px 0px;
+}
+.friends-screen__channel-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }

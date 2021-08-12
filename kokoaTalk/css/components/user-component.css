@@ -29,9 +29,6 @@
   color: rgba(0, 0, 0, 0.5);
   font-size: 17px;
 }
-.user-component__channel {
-  margin-top: 25px;
-}
-.user-component__channel--not-bold {
+.user-component__title--not-bold {
   font-weight: 400;
 }

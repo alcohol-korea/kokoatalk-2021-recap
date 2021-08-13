@@ -3,13 +3,15 @@
   /*css는 위에서부터 아래로 내려감 display flex도 아닌데 block도 아닌데 postion 어캐함*/
   height: 60px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.2);
-  position: relative;
   padding: 0px 35px;
   position: fixed;
   top: 0;
   width: 100%;
   box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
+}
+.screen-header__black {
+  background-color: black;
 }
 /*link*/
 .screen-header-link {

@@ -7,7 +7,7 @@
     <title>Netflix</title>
 </head>
 <body>
-    <div class="screen-header">
+    <header class="screen-header">
         <a class="screen-header-link" href="#"><img src="https://fontmeme.com/permalink/210809/bff6622056720276cfc41bd959cdffcd.png" alt="netflix-type" border="0"></a>
         <ul class="screen-header-page__list">
             <li class="screen-header-page__btn">
@@ -40,7 +40,7 @@
                 <i class="fas fa-caret-down fa-s"></i>
             </div>
         </div>
-    </div>
+    </header>
     <main class="main">
         <div class="main-title">
             <div class="main-title__main">
@@ -53,14 +53,16 @@
             1명의 천재, 8명의 공범, 철저히 준비한 세기의 강도. 스페인 조폐국에서 인질극까지 벌인 이들은 과연 포위 경찰을 따돌리고 거액의 돈과 함께 달아날 수 있을까?
         </p>
         <div class="main-btn">
-            <button class="main-btn__play">
-                <i class="fas fa-play"></i>
-                재생
-            </button>
-            <button class="main-btn__info">
-                <i class="fas fa-info-circle"></i>
-                상세정보
-            </button>
+            <div class="main-btn__left">
+                <button class="main-btn__play">
+                    <i class="fas fa-play"></i>
+                    재생
+                </button>
+                <button class="main-btn__info">
+                    <i class="fas fa-info-circle"></i>
+                    상세정보
+                </button>
+            </div>
             <div class="main-btn__right">
                 <button class="main-btn__sound">
                     <i class="fas fa-volume-up"></i>
@@ -73,6 +75,8 @@
         </div>
         <div class="main-mine"></div>
     </main>
+    <img class="main-bg__img" src="bgimg2.jfif" >
+    <script src="js/scroll-header.js"></script>
     <script src="https://kit.fontawesome.com/065612d6c9.js" crossorigin="anonymous"></script>
 </body>
 </html>

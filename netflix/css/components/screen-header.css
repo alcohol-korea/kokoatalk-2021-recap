@@ -32,6 +32,12 @@
 a:hover:not(.home) {
   color: rgb(255, 255, 255, 0.5);
 }
+/*
+screen-header
+a:not(.home):hover home이 아닌것이
+hover이면
+a:not(.home:hover) .home이 hover일떄만 css아님
+*/
 /*menu*/
 .screen-header-menu {
   position: absolute;

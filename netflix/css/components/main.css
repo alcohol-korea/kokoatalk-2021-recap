@@ -41,6 +41,13 @@
     display: flex;
     justify-content: space-between;
 }
+.main-btn__left button:hover{
+  opacity:0.6;
+}
+.main-btn__right{
+    display: flex;
+    margin-top: 15px;
+}
 .main-btn__play{
     background-color: white;
     width: 90px;
@@ -49,16 +56,13 @@
     margin-right: 10px;
 }
 .main-btn__info{
-    background-color:#A4A2A2; 
+    background-color:rgb(109, 109, 109,0.8); 
     width: 120px;
     height: 35px;
     color: white;
     font-weight: 600;
 }
-.main-btn__right{
-    display: flex;
-    margin-top: 15px;
-}
+
 i:not(.fa-volume-up){
     margin-right: 8px;
 }

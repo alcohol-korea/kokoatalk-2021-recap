@@ -2,7 +2,7 @@
   display: flex;
   /*css는 위에서부터 아래로 내려감 display flex도 아닌데 block도 아닌데 postion 어캐함*/
   height: 60px;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 0px 35px;
   position: fixed;
   top: 0;
@@ -28,6 +28,9 @@
 .screen-header-page__btn {
   margin: 0px 10px;
   margin-bottom: 5px;
+}
+a:hover:not(.home) {
+  color: rgb(255, 255, 255, 0.5);
 }
 /*menu*/
 .screen-header-menu {

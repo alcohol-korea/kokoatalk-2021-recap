@@ -1,0 +1,94 @@
+.video-component {
+  margin-top: 60px;
+  height: 150px;
+}
+/*video compenet의 해더*/
+.video-component__header {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+}
+/*title*/
+.video-component__title {
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+/*제목 옆에바*/
+.video-component__title-bar {
+  display: flex;
+  align-items: center;
+}
+.bar {
+  display: block;
+  width: 20px;
+  margin-right: 5px;
+  height: 3px;
+  border-radius: 20%;
+  background-color: #272727;
+}
+.bar:first-child {
+  background-color: rgb(122, 122, 122);
+}
+/*video-list*/
+.video-component__list {
+  display: flex;
+  width: 1300px;
+  padding-top: 10px;
+}
+/*비디오*/
+.video-component__video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*비디오 -img,bar*/
+.video-component__video-img {
+  margin: 0px 5px 5px 0px;
+  border-radius: 5%;
+  width: 210px;
+  height: 120px;
+}
+.video-component__video-bar {
+  display: block;
+  width: 130px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #5b5b5b;
+}
+/*video-bar*/
+.video-bar__red {
+  display: block;
+  width: 30%;
+  height: 3px;
+  background-color: red;
+  border-radius: 5px;
+}
+.video-bar__red-half {
+  width: 50%;
+}
+.video-bar__red-little {
+  width: 10%;
+}
+/*btn*/
+.video-component__btn {
+  position: absolute;
+  top: 515px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.video-component__btn-black {
+  width: 41px;
+  height: 120px;
+  display: flex;
+  border-radius: 5px 0px 0px 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.8);
+}
+.video-component__btn-black i {
+  color: white;
+}

@@ -9,6 +9,7 @@
   width: 100%;
   box-sizing: border-box;
   transition: all 0.5s ease-in-out;
+  z-index: 2;
 }
 .screen-header__black {
   background-color: black;

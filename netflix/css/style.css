@@ -10,4 +10,12 @@ body {
   background-color: black;
   width: 100%;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+.page__home {
+  width: 900px;
+}
+.hidden {
+  display: none;
 }

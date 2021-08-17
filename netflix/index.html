@@ -7,6 +7,7 @@
     <title>Netflix</title>
 </head>
 <body>
+<div class="page__home">
     <header class="screen-header">
         <a class="screen-header-link" href="#"><img src="https://fontmeme.com/permalink/210809/bff6622056720276cfc41bd959cdffcd.png" alt="netflix-type" border="0"></a>
         <ul class="screen-header-page__list">
@@ -77,7 +78,7 @@
     <div class="video-component">
             <header class="video-component__header">
                 <h4 class="video-component__title">
-                    내가 시청 중인 콘텐츠<i class="fas fa-chevron-right fa-xs"></i>
+                    내가 시청 중인 콘텐츠 <span class="video-component__title-icon hidden"><i class="fas fa-chevron-right fa-xs"></i></span>
                 </h4>
                 <div class="video-component__title-bar">
                     <span class="bar"></span>
@@ -129,8 +130,10 @@
                 </div>
             </div>
     </div>
+</div>
     <img class="main-bg__img" src="bgimg4.jpg" >
     <script src="js/scroll-header.js"></script>
+    <script src="js/video-component__animation.js"></script>
     <script src="https://kit.fontawesome.com/065612d6c9.js" crossorigin="anonymous"></script>
 </body>
 </html>

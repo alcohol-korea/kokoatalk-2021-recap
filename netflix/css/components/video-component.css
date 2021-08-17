@@ -1,6 +1,13 @@
 .video-component {
   height: 150px;
   position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.video-component::-webkit-scrollbar {
+  width: auto;
+  height: 1px;
+  margin-top: 10px;
 }
 /*video compenet의 해더*/
 .video-component__header {
@@ -10,13 +17,22 @@
   width: 100%;
   margin-left: 41px;
   padding-right: 35px;
+  position: absolute;
+  top: 0;
 }
 /*title*/
 .video-component__title {
-  color: white;
+  color: #d8d8d8;
   font-size: 15px;
   font-weight: 700;
   font-family: sans-serif;
+  display: flex;
+  transition: color 0.5s ease-in-out;
+}
+.video-component__title-icon {
+  color: white;
+  font-size: 10px;
+  transition: margin-left 1s ease-in-out;
 }
 /*제목 옆에바*/
 .video-component__title-bar {
@@ -38,8 +54,8 @@
 .video-component__list {
   display: flex;
   width: 1300px;
-  padding-top: 10px;
-  margin-left: 41px;
+  padding-top: 25px;
+  margin-left: 42px;
 }
 /*비디오*/
 .video-component__video {
@@ -84,7 +100,7 @@
   width: 100%;
 }
 .video-component__btn-black {
-  width: 41px;
+  width: 40px;
   height: 120px;
   display: flex;
   border-radius: 5px 0px 0px 5px;

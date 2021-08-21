@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #12191c;
+  color: #fff;
+  font-size: 20px;
+}
+/*header*/
+.header {
+  padding-left: 35px;
+}
+/*slide*/
+.slide {
+  width: 645px; /*끝에 도착시 615px이 됨*/
+  overflow-x: scroll;
+  padding-left: 35px;
+}
+.slide::-webkit-scrollbar {
+  width: 1000%;
+}
+/*slide-list*/
+.slide-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+/*slide__comic*/
+.slide__comic img {
+  width: 200px;
+  height: 400px;
+  margin-right: 5px;
+  transition: all 1s ease-in-out;
+}
+.slide__comic img:hover {
+  border-radius: 25%;
+}
+.slide__comic:last-child img {
+  margin-right: 0;
+}
+/*slide-button box*/
+.slide-button {
+  display: flex;
+  justify-content: space-between;
+  position: fixed; /*body에 fixed*/
+  top: 108px; /*header높이만큼 띄우기*/
+}
+/*slide-button*/
+.slide__chevron {
+  height: 401px;
+  width: 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: fixed;
+}
+.right {
+  left: 650px;
+}
+.left {
+  left: 0;
+}
+/*
+left btn 처음일때랑 도착시 없어짐
+right btn 끝도착시 없어짐
+*/
+.hidden {
+  display: none;
+}

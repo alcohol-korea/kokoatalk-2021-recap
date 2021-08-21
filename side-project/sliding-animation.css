@@ -1,0 +1,90 @@
+@import url(css/no-big-small.css);
+body {
+  background-color: rgb(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*header--------------------------------------------------*/
+.slide-header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+h1 {
+  color: white;
+}
+.slide-header__bar {
+  display: flex;
+  margin-top: 20px;
+}
+.slide-header__bar span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: rgba(78, 78, 78, 0.904);
+  border-radius: 20%;
+  margin: 0px 5px;
+}
+/* 슬라이드 버튼이 눌러지면 다음으로 넘어갈떄 쓰임 */
+.slide-header__bar span:first-child {
+  background-color: white;
+}
+/*main-------------------------------------------------------*/
+.slide-main {
+  box-sizing: border-box;
+  padding-top: 150px;
+  display: flex;
+  width: 100%; /*-webkit-calc:%랑 px을 연산가능*/
+}
+.main__list {
+  padding-left: 0px;
+  overflow-x: scroll;
+  overflow: hidden;
+  list-style: none;
+  display: flex;
+}
+.main__list ::-webkit-scrollbar {
+  width: 200%;
+}
+.main__list::-webkit-scrollbar-thumb {
+  width: 3px;
+  height: auto;
+}
+.list__slider img {
+  display: block;
+  width: 180px;
+  height: 500px;
+  margin-right: 45px;
+}
+.list__slider:last-child img {
+  margin-right: 14px;
+}
+.main__btn {
+  width: 100%;
+  position: fixed;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.btn__black {
+  background-color: rgb(0, 0, 0, 0.3);
+  color: white;
+  width: 55px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transition: all 1s ease-in-out;
+}
+.btn__black:last-child {
+  right: 30px;
+}
+
+.hidden {
+  display: none;
+}

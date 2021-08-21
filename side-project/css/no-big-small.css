@@ -1,0 +1,18 @@
+#no-big {
+  position: absolute; /*태그들의 위에 위치*/
+  top: 0;
+  z-index: 99; /*어떤것이라도 위에 올라감*/
+  height: 100vh;
+  width: 100vw;
+  background-color: tomato;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 54px;
+}
+@media screen and (max-width: 1110px) and (min-width: 1109px) {
+  #no-big {
+    display: none;
+  }
+}

@@ -1,32 +1,48 @@
 const slide = document.querySelector(".slide");
+const slideList = document.querySelector(".slide-list");
 const slideRightBtn = document.querySelector(".right");
 const slideLeftBtn = document.querySelector(".left");
+function slideRight(e){
+    console.log("right",e)
+    console.dir(slide)
+    let option = 
+    {
+        top:0,
+        left:615,
+        behavior:"smooth"
+    }
+    slide.scrollBy(option);
+    slideLeftBtn.classList.remove("hidden");
+    if(slide.scrollLeft == 615){
+        slideRightBtn.classList.add("hidden");
+        //눌렀을떄 실행이 되어야하니깐 사라지기전에 즉 다음 페이지로 넘어가기전에 누르는 지점에서 실행되어야한다
+    }
+}
+function slideLeft(e){
+    console.log("left",e)
+    console.dir(slide)
+    let option = 
+    {
+        top:0,
+        left: -615,
+        behavior:"smooth"
+    }
+    console.log(option.left)
+    slide.scrollBy(option);
+    if(slide.scrollLeft == 1230){
+        slideRightBtn.classList.remove("hidden");    
+    }
+    else if(slide.scrollLeft == 615){
+        slideLeftBtn.classList.add("hidden");
+        //눌렀을떄 실행이 되어야하니깐 사라지기전에 즉 다음 페이지로 넘어가기전에 누르는 지점에서 실행되어야한다
+    }
+}
 
-function slideScroll(e){
+slideRightBtn.addEventListener("click",slideRight);
+slideLeftBtn.addEventListener("click",slideLeft);
+/*function handleScroll(e){
     const scroll = e.path[0].scrollLeft;
     console.log(scroll)
 }
 
-function slideRight(e){
-    slide.scrollBy({
-        top:0,
-        left:410,
-        behavior:"smooth"
-    });
-    let scrollLeft = slide.scrollLeft;
-    if(scrollLeft = 1195){
-        slideRightBtn.classList.add("hidden");
-        slide.style.width = "610px";
-    }
-}
-function slideLeft(e){
-    slide.scrollBy({
-        top:0,
-        left:-410,
-        behavior:"smooth"
-    });
-}
-
-slide.addEventListener("scroll",slideScroll);
-slideRightBtn.addEventListener("click",slideRight);
-slideLeftBtn.addEventListener("click",slideLeft);
+slide.addEventListener("scroll",handleScroll);*/

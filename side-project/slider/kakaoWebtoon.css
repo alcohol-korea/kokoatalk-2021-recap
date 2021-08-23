@@ -30,10 +30,6 @@ body {
   width: 200px;
   height: 400px;
   margin-right: 5px;
-  transition: all 1s ease-in-out;
-}
-.slide__comic img:hover {
-  border-radius: 25%;
 }
 .slide__comic:last-child img {
   margin-right: 35px;
@@ -41,7 +37,6 @@ body {
 /*slide-button box*/
 .slide-button {
   display: flex;
-  justify-content: space-between;
   position: fixed; /*body에 fixed*/
   top: 108px; /*header높이만큼 띄우기*/
 }

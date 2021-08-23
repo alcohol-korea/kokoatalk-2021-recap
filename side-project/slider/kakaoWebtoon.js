@@ -3,15 +3,12 @@ const slideList = document.querySelector(".slide-list");
 const slideRightBtn = document.querySelector(".right");
 const slideLeftBtn = document.querySelector(".left");
 function slideRight(e){
-    console.log("right",e)
-    console.dir(slide)
-    let option = 
-    {
+    console.log("right",slide.scrollLeft)
+    slide.scrollBy( {
         top:0,
         left:615,
         behavior:"smooth"
-    }
-    slide.scrollBy(option);
+    });
     slideLeftBtn.classList.remove("hidden");
     if(slide.scrollLeft == 615){
         slideRightBtn.classList.add("hidden");
@@ -19,16 +16,12 @@ function slideRight(e){
     }
 }
 function slideLeft(e){
-    console.log("left",e)
-    console.dir(slide)
-    let option = 
-    {
+    console.log("left",slide.scrollLeft)
+    slide.scrollBy( {
         top:0,
-        left: -615,
+        left:-615,
         behavior:"smooth"
-    }
-    console.log(option.left)
-    slide.scrollBy(option);
+    });
     if(slide.scrollLeft == 1230){
         slideRightBtn.classList.remove("hidden");    
     }
@@ -45,4 +38,11 @@ slideLeftBtn.addEventListener("click",slideLeft);
     console.log(scroll)
 }
 
-slide.addEventListener("scroll",handleScroll);*/
+slide.addEventListener("scroll",handleScroll);
+
+let option ={
+    top:0,
+    left:615,
+    behavior:"smooth"
+}
+*/

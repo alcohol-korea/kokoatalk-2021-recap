@@ -1,0 +1,79 @@
+.totop_arrow1 {
+  background-color: #000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-indent: -999px;
+  /*text-indent는 들여쓰기인데 없어지려면 엄청 들여쓰기 하면됨*/
+  position: relative;
+}
+.totop_arrow1::before,
+.totop_arrow1::after {
+  content: "";
+  background-color: white;
+  width: 18px;
+  height: 4px;
+  border-radius: 5px;
+  position: absolute;
+  top: 48%;
+}
+.totop_arrow1::before {
+  left: 21px;
+  transform: translateY(-50%) rotate(45deg); /*위치맞추기*/
+}
+.totop_arrow1::after {
+  right: 21px;
+  transform: translateY(-50%) rotate(-45deg); /*위치맞추기*/
+}
+.ico_arrow {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  text-indent: -999px;
+}
+.ico_arrow::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 38%;
+  left: 28%;
+  border-left: 2px solid #000;
+  border-top: 2px solid #000;
+  transform: rotate(135deg) translate(-50%, -50%);
+}
+.ico_arrow::after {
+  content: "";
+  width: 42px;
+  height: 2px;
+  position: absolute;
+  right: 0px;
+  top: 56%;
+  /*postion top이나 bottom그리고 right이나 left를 다주면 나온다*/
+  transform: translateY(-50%);
+  background-color: #000;
+}
+.btn_close {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  text-indent: -999px;
+}
+.btn_close::after,
+.btn_close::before {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+}
+.btn_close::before {
+  top: 48%;
+  left: 55%;
+  transform: rotate(-45deg) translate(-50%, -50%);
+}
+.btn_close::after {
+  bottom: -20%;
+  left: 50%;
+  transform: rotate(46deg) translate(-50%, -50%);
+}

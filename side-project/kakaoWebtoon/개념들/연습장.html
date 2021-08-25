@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습장</title>
+    <style>
+        .세모 {
+                width: 0px;
+                height: 0px;
+                border-left: 100px solid wheat;
+                border-top: 100px solid teal;
+                border-bottom: 100px solid teal;
+              }
+li{
+    list-style: none;
+    position: relative;
+}
+ li::before {
+content: "";
+  display: block;
+  background-color: tomato;
+  margin-right: 10px;
+  width: 8px;
+  height: 1px;
+}
+li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: teal;
+  border-top: 1px solid tomato;
+  border-right: 1px solid tomato;
+  margin: 2px 3px 0px;
+  transform: rotate(45deg);
+}
+    </style>
+</head>
+<body>
+    <div class="세모"></div>
+    <li>안녕</li>
+</body>
+</html>

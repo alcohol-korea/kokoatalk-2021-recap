@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::before</title>
+    <style>
+        ul{
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            border: 1px solid #ccc;
+            height: 30px;
+            width:380px
+        }
+        li{
+            list-style: none;
+            float: left;/*display flex처럼 좌측으로 떠서 움직임*/
+            padding: 0px 15px;
+        }
+        li::before{
+            content: "|";
+            float: right;/*우측으로 떠서 움직임*/
+            color: #ccc;
+            margin-right: -17px;
+        }
+        li:last-child::before{
+            content: "";
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>로그인</li>
+        <li>회원가입</li>
+        <li>마이페이지</li>
+        <li>사이트맵</li>
+    </ul>
+</body>
+</html>

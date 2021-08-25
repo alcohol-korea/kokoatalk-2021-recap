@@ -1,0 +1,52 @@
+@import url(list.css);
+@import url(button.css);
+/*공통*/
+body {
+  width: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+  background-color: teal;
+}
+article {
+  display: inline-block;
+  width: 560px;
+  position: relative;
+  margin: 30px auto;
+  padding: 26px;
+  box-sizing: border-box;
+  text-align: left;
+  vertical-align: text-top;
+}
+button {
+  background: 0;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+button:focus {
+  outline: 0;
+}
+h1 {
+  margin: 0;
+  margin-left: 30px;
+  margin-top: 30px;
+  color: #fff;
+}
+h3,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.tit {
+  margin: 10px auto 0 auto;
+  font-size: 30px;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+.tit_sub {
+  margin: 0 0 24px 0;
+  font-size: 20px;
+  color: tomato;
+}

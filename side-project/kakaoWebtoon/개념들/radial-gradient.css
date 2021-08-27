@@ -1,0 +1,52 @@
+.cc {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  background: radial-gradient(
+    closest-corner at 100px 200px,
+    yellow,
+    green,
+    pink
+  );
+}
+.cs {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  background: radial-gradient(closest-side at 100px 200px, yellow, green, pink);
+}
+.fc {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  background: radial-gradient(
+    farthest-corner at 100px 200px,
+    yellow,
+    green,
+    pink
+  );
+}
+.fs {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  background: radial-gradient(
+    farthest-side at 100px 200px,
+    yellow,
+    green,
+    pink
+  );
+}
+.radial-gradient {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  background: radial-gradient(
+    ellipse at 50% 100%,
+    red,
+    rgb(182, 1, 182) 45%,
+    rgb(116, 0, 116) 65%,
+    rgb(79, 194, 248) 70%,
+    blue 80%
+  );
+}

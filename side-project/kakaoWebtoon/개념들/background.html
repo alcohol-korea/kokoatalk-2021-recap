@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+        }
+        .box{
+            width: 500px;
+            height: 50px;
+            background-color: #1D1F20;
+            position: relative;
+            color: white;
+            border-radius: 50px;
+            margin-bottom: 100px;
+        }
+        .box::after{
+            content: "";
+            position: absolute;
+            top:-6px;
+            left:-8px;
+            width: calc(100% + 15px);
+            height: calc(100% + 12px);
+            background: linear-gradient(135deg, red 20%,rgb(248, 6, 175) 25%,rgb(182, 1, 182) 45%,rgb(116, 0, 116)65%
+            ,rgb(79, 194, 248) 70%,blue 80%);
+            animation: animatedgradient 10s ease-in-out alternate infinite;
+            border-radius: 50px;
+            background-size: 300% 300%;
+            z-index: -1;
+        }
+        @keyframes animatedgradient{
+            0%{
+                background-position:15% 0%;
+            }
+            50%{
+                background-position: 85% 0% ;
+            }
+            100%{
+                background-position: 15% 0% ;
+            }
+        }
+        .size{
+            width: 300px;
+            height: 300px;
+            border: black 1px solid;
+            margin-left: 50px;
+        }
+        .gradient{
+            background: linear-gradient(tomato,teal,thistle,wheat);
+        }
+        .gradient-투명도{
+            background: linear-gradient(rgb(255, 99, 71),rgb(255, 99, 71,0));
+        }
+        .gradient-repeat{
+            background-image: repeating-linear-gradient(red, yellow 10%, green 20%,wheat 30%);
+        }
+        .border{
+            margin-left: 50px;
+            width: 1500px;
+            height: 150px;
+            background:linear-gradient(135deg,yellow 10% ,red 20%,rgb(248, 6, 175) 25% ,rgb(182, 1, 182) 45%,rgb(116, 0, 116)65%
+            ,rgb(79, 194, 248) 70%,blue 80%);
+            animation: ani 5s ease-in-out infinite;
+            margin-bottom: 50px;
+        }
+        /*
+        @keyframes 
+        ani{
+            0%{
+                background-position: 50% 50%;
+            }
+            50%{
+                background-position: 150% 150%;
+            }
+            100%{
+                background-position: 50% 50%;
+            }
+        }*/
+
+    </style>
+</head>
+<body>
+    <div class="box">hi</div>
+    <!--
+    <div class="size gradient">hi</div>
+    <div class="size gradient-투명도">hi</div>
+    <div class="size gradient-repeat">hi</div>-->
+    <div class="border animation"></div>
+    <div class="border"></div>
+</body>
+</html>

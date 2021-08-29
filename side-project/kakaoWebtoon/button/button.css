@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+.responsive-btn {
+  background-color: black;
+  width: 500px;
+  height: 50px;
+  color: white;
+  align-items: center;
+  position: relative;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.responsive-btn::after {
+  content: "";
+  background: linear-gradient(
+    var(--angle),
+    red 20%,
+    rgb(182, 1, 182) 25%,
+    rgb(116, 0, 116) 45%,
+    rgb(79, 194, 248) 55%,
+    blue 80%
+  );
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  background-size: 100% 100%;
+  border-radius: 50px;
+  z-index: -1;
+}
+.responsive-btn i {
+  margin: 0px 15px;
+}

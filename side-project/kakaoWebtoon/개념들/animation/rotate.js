@@ -1,5 +1,5 @@
 const
-colorCircle = document.querySelector(".responsive-btn");
+colorCircle = document.querySelector(".rotate");
 //rotate::after에 하려면 rotate에 하면됨
 //어차피 rotate안에 속해있는 것이므로 상관 없음 =>absolute했잖아!!!!!!
 //따라서 rotate한테 걸어야하기때문에 이게 안될우려가 높음

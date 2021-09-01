@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: space-between;
+}
+.linear-gradient {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  background: linear-gradient(
+    to right,
+    red,
+    #b601b6 45%,
+    #740074 65%,
+    #4fc2f8 70%,
+    blue 80%
+  );
+}
+.linear-gradient2 {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  background: linear-gradient(
+    to right,
+    red 45%,
+    #b601b6 45%,
+    #b601b6 65%,
+    #740074 65%,
+    #740074 70%,
+    #4fc2f8 70%,
+    #4fc2f8 80%,
+    blue 80%
+  );
+}
+/*
+   red,
+    red 45%,
+    #b601b6 45%,
+    #b601b6 65%,
+    #740074 65%,
+    #740074 70%,
+    #4fc2f8 70%,
+    #4fc2f8 80%,
+    blue 80%
+*/

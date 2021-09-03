@@ -2,6 +2,8 @@ const
 icon = document.querySelectorAll("i"),
 button = document.querySelector(".responsive-btn");
 
+console.log(icon)
+
 function clickedButton(e) {
     for(i=0;i<5;i++){
         icon[i].style.display = "none";

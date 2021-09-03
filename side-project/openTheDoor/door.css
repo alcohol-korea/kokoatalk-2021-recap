@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.door {
+  width: 200px;
+  height: 400px;
+  background-color: #f6c801;
+  transition: transform 1s;
+}
+.door:hover {
+  transform: rotateY(45deg);
+}

@@ -7,6 +7,7 @@
 @import url(components/nav-bar.css);
 @import url(components/status-bar.css);
 /*screens*/
+@import url(screens/find.css);
 @import url(screens/login.css);
 @import url(screens/friends.css);
 body {
